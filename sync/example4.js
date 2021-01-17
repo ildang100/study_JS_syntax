@@ -22,8 +22,10 @@ const getTurtle = async () => {
 }
 
 async function process() {
-    const results = await Promise.all([getDog(), getRabbit(), getTurtle()])
-    console.log(results)
+    const [dog, rabbit, turtle ] = await Promise.all([getDog(), getRabbit(), getTurtle()])
+    console.log(dog)
+    console.log(rabbit)
+    console.log(turtle)
 }
 
 process();
